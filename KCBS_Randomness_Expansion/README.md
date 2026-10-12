@@ -7,7 +7,9 @@
 ---
 
 
-This code accompanies the paper **“Local finite rate semi device independent randomness expansion from quantum contextuality”** by Dhananjoy Ghosh, Nandana J, and Jaskaran Singh.
+# Overview
+
+This code accompanies the paper **“Local finite rate semi device independent randomness expansion from quantum contextuality”**.
 
 The paper studies semi-device-independent randomness expansion (SDI-RE) using contextual correlations and finite-statistics security analysis based on the entropy accumulation theorem (EAT). The MATLAB routines supplied here focus on the entropy SDP and randomness-expansion-rate calculation for odd-cycle contextuality scenarios, including the KCBS case \(N=5\).
 
