@@ -1,6 +1,6 @@
 %% Main Code
 
-function [H,lambda0,lambda1] = hae_chsh(betaEff,m,N)
+function [H,lambda0,lambda1] = hae_chsh(betaQ,delta,m,N)
 
 
 % Parameters
@@ -9,6 +9,12 @@ d  = 4;
 nA = 2;
 [w,t] = gauss_radau(m);
 t(t<1e-16) = 1e-16;
+
+
+% Effective Quantum violation
+
+betaEff = betaQ - delta;
+
 
 
 % Cycle measurements
@@ -198,7 +204,11 @@ end
 
 %% Code for Key rate
 
-function r = RE_rate(betaEff,q,N,n,lambda,m,epsEA,epss,gamma)
+function r = RE_rate(betaQ,delta,q,N,n,lambda,m,epsEA,epss,gamma)
+
+% Effective Quantum violation 
+
+betaEff = betaQ - delta;
 
 
 % Quadrature constant c_m
