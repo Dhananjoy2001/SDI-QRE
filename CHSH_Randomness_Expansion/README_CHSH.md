@@ -1,4 +1,15 @@
-# Finite-Rate Semi-Device-Independent Randomness Expansion: CHSH / Even-Cycle Case
+# Local Finite-Rate Semi-Device-Independent Randomness Expansion from Quantum Contextuality
+
+**Authors:** Dhananjoy Ghosh, Nandana J, and Jaskaran Singh
+
+**Affiliation:** Centre for Quantum Science and Technology (CQST), IIT Mandi 
+
+**arXiv:** [arxiv link]  
+
+---
+
+
+# Overview
 
 This README documents the MATLAB implementation for the even-cycle contextuality scenario, including the CHSH case `N = 4`, associated with the paper **“Local finite rate semi device independent randomness expansion from quantum contextuality”**.
 
