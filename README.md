@@ -48,3 +48,21 @@ The code accompanies the work:
 **Dhananjoy Ghosh, Nandana J, and Jaskaran Singh, “Local finite rate semi device independent randomness expansion from quantum contextuality.”**
 
 Please refer to the paper for the protocol, assumptions, security analysis, and definitions of the quantities implemented in the code.
+
+## Citation
+
+If you use this code in your research, please cite the associated paper.
+
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
+
+
+
+
+
+
