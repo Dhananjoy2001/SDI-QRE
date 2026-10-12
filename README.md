@@ -49,6 +49,14 @@ The code accompanies the work:
 
 Please refer to the paper for the protocol, assumptions, security analysis, and definitions of the quantities implemented in the code.
 
+
+## Contact
+
+**Dhananjoy Ghosh**  
+Centre for Quantum Science and Technology (CQST), IIT Mandi  
+✉ [d25062@students.iitmandi.ac.in](mailto:d25062@students.iitmandi.ac.in)
+
+
 ## Citation
 
 If you use this code in your research, please cite the associated paper.
