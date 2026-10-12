@@ -52,7 +52,7 @@ After placing the callable functions in MATLAB files as described above, run the
 N      = 5;
 betaQ  = 0.4460;
 delta  = 1e-3;
-m      = 6;
+m      = 8;
 
 % Stage 1: solve the entropy SDP and obtain its dual variables
 [H, lambda0, lambda1] = hae_kcbs(betaQ, delta, m, N);
@@ -63,7 +63,7 @@ n      = 1e12;
 q      = 1e-2;
 epsEA  = 1e-6;
 epss   = 1e-6;
-gamma  = 1/sqrt(n);
+gamma  = \(1/\sqrt(n)\);
 
 r = RE_rate(betaQ, delta, q, N, n, lambda, m, ...
             epsEA, epss, gamma);
@@ -88,5 +88,5 @@ These are illustrative parameter choices for an \(N=5\) calculation, not a guara
 
 ## Reference
 
-Dhananjoy Ghosh, Nandana J, and Jaskaran Singh, **“Local finite rate semi device independent randomness expansion from quantum contextuality.”** See the accompanying paper PDF in this repository.
+Dhananjoy Ghosh, Nandana J, and Jaskaran Singh, **“Local finite rate semi device independent randomness expansion from quantum contextuality.”** 
 
