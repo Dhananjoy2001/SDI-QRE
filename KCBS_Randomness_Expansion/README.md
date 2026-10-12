@@ -1,9 +1,7 @@
 # Local Finite-Rate Semi-Device-Independent Randomness Expansion from Quantum Contextuality
 
 **Authors:** Dhananjoy Ghosh, Nandana J, and Jaskaran Singh
-
 **Affiliation:** Centre for Quantum Science and Technology (CQST), IIT Mandi 
-
 **arXiv:** [arxiv link]  
 
 ---
