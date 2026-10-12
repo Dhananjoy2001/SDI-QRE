@@ -1,6 +1,11 @@
 %% Code for smooth min entropy
 
-function [H,lambda0,lambda1] = hae_kcbs(betaEff,m,N)
+function [H,lambda0,lambda1] = hae_kcbs(betaQ,delta,m,N)
+
+
+% Effective Quantum violation
+
+betaEff = betaQ - delta;
 
 
 % KCBS N-cycle randomness SDP
@@ -182,8 +187,12 @@ end
 
 %% Code for Key rate
 
-function r = RE_rate(betaEff,q,N,n,lambda,m,epsEA,epss,gamma)
+function r = RE_rate(betaQ,delta,q,N,n,lambda,m,epsEA,epss,gamma)
 
+
+% Effective Quantum violation
+
+betaEff = betaQ - delta;
 
 
 % Quadrature constant c_m
