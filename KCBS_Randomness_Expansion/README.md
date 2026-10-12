@@ -63,7 +63,7 @@ n      = 1e12;
 q      = 1e-2;
 epsEA  = 1e-6;
 epss   = 1e-6;
-gamma  = \(1/\sqrt(n)\);
+gamma  = 1/sqrt(n);
 
 r = RE_rate(betaQ, delta, q, N, n, lambda, m, ...
             epsEA, epss, gamma);
