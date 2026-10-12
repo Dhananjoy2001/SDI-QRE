@@ -1,6 +1,6 @@
 # Finite-Rate Semi-Device-Independent Randomness Expansion: CHSH / Even-Cycle Case
 
-This README documents the MATLAB implementation for the even-cycle contextuality scenario, including the CHSH case `N = 4`, associated with the paper **“Local finite rate semi device independent randomness expansion from quantum contextuality”** by Dhananjoy Ghosh, Nandana J, and Jaskaran Singh.
+This README documents the MATLAB implementation for the even-cycle contextuality scenario, including the CHSH case `N = 4`, associated with the paper **“Local finite rate semi device independent randomness expansion from quantum contextuality”**.
 
 The code evaluates a finite-statistics randomness-expansion (RE) rate using an entropy semidefinite program (SDP) and the entropy accumulation theorem (EAT). In this implementation, the CHSH-type measurements are treated as measurements on one localized four-dimensional system, as described in the paper's semi-device-independent contextuality setting.
 
@@ -31,30 +31,6 @@ The quadrature and binary-entropy calculations use standard MATLAB operations.
 | `gauss_radau(m)` | Calculates the Gauss–Radau quadrature weights and nodes. | Returns `w` and `t`. |
 | `binary_entropy(q)` | Calculates the binary entropy \(h(q)\). | Used in the input-randomness cost. |
 
-## Important MATLAB file-layout note
-
-The uploaded file `key_rate_CHSH(2).m` contains `hae_chsh` first and `RE_rate` later in the same file. MATLAB exposes the first function as the primary function of a function file; the later `RE_rate` definition is local to that file and ordinarily cannot be called directly from the Command Window. Also, the filename needs to match the primary function name.
-
-Before running the example below, arrange the code so that:
-
-- the `hae_chsh` function is in `hae_chsh.m`;
-- the `RE_rate` function is in `RE_rate.m`;
-- `cycle_projectors_even` is in `cycle_projectors_even.m` (remove the `(1)` suffix from the uploaded filename);
-- `gauss_radau` and `binary_entropy` are available to the functions that use them. You can put them in their own files named `gauss_radau.m` and `binary_entropy.m`, or keep local copies at the bottom of each function file that needs them.
-
-When splitting the original file, keep each function's complete body and make sure its helper functions remain available. The `(2)` and `(1)` suffixes in the uploaded filenames are upload-name suffixes, not part of the function names expected by MATLAB.
-
-A suggested repository layout is:
-
-```text
-README.md
-SDI_QRE_general.pdf       # accompanying paper (use the exact filename in your repository)
-hae_chsh.m
-RE_rate.m
-cycle_projectors_even.m
-gauss_radau.m              # if using a shared helper file
-binary_entropy.m           # if using a shared helper file
-```
 
 ## Example: CHSH case (`N = 4`)
 
@@ -65,7 +41,7 @@ For the CHSH/even-cycle scenario, the paper gives the noncontextual bound as \(3
 N      = 4;
 betaQ  = 0.8526;
 delta  = 1e-3;
-m      = 6;
+m      = 8;
 
 % Stage 1: solve the entropy SDP and obtain the dual variables
 [H, lambda0, lambda1] = hae_chsh(betaQ, delta, m, N);
@@ -104,8 +80,5 @@ These parameters are an example to show how the functions are connected; they do
 
 ## Reference
 
-Dhananjoy Ghosh, Nandana J, and Jaskaran Singh, **“Local finite rate semi device independent randomness expansion from quantum contextuality.”** See the accompanying paper PDF in this repository.
+Dhananjoy Ghosh, Nandana J, and Jaskaran Singh, **“Local finite rate semi device independent randomness expansion from quantum contextuality.”** 
 
-## License
-
-No software license is specified in the supplied files. Add a `LICENSE` file if you want to grant explicit reuse or redistribution permissions.
