@@ -1,4 +1,12 @@
-# Semi-Device-Independent Quantum Randomness Expansion (SDI-QRE)
+# Local Finite-Rate Semi-Device-Independent Randomness Expansion from Quantum Contextuality
+
+**Authors:** Dhananjoy Ghosh, Nandana J, and Jaskaran Singh
+
+**Affiliation:** Centre for Quantum Science and Technology (CQST), IIT Mandi 
+
+**arXiv:** https://doi.org/10.48550/arXiv.2610.21765  
+
+---
 
 This repository contains MATLAB code for calculating finite-statistics randomness-expansion (RE) rates in semi-device-independent (SDI) protocols based on quantum contextuality. The analysis uses semidefinite programming (SDP) to bound the conditional entropy and the entropy accumulation theorem (EAT) to estimate the net randomness expansion rate.
 
