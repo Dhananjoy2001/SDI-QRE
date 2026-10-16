@@ -4,7 +4,7 @@
 
 **Affiliation:** Centre for Quantum Science and Technology (CQST), IIT Mandi 
 
-**arXiv:** [arxiv link]  
+**arXiv:** https://doi.org/10.48550/arXiv.2610.21765  
 
 ---
 
